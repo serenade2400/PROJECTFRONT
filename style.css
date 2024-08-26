@@ -87,6 +87,7 @@ html,body{
     height: 50px;
     width: 80%;
     position: absolute;
+    background-color: palegoldenrod;
 
 }
 @media (max-width:600px) {
