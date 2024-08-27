@@ -22,8 +22,8 @@ videocon.addEventListener("mouseleave",function(){
 })
 videocon.addEventListener("mousemove",function(dets){
     gsap.to(playbtn,{
-        left:dets.x-90,
-        top:dets.y-100
+        left:dets.x,
+        top:dets.y-200
     })
 })
 
@@ -48,3 +48,62 @@ function loadinganimation(){
     }) 
 }
 loadinganimation()
+
+document.addEventListener("mousemove",function(dets){
+    gsap.to("#cursor",{
+        left:dets.x,
+        top:dets.y
+    })
+
+})
+document.querySelector("#class1").addEventListener("mouseenter",function(){
+    gsap.to("#cursor",{
+        transform: 'translate(-50%,-50%) scale(1)'
+    })
+})
+document.querySelector("#child1").addEventListener
+("mouseleave",function(){
+    gsap.to("#cursor",{
+        transform: 'translate(-50%,-50%) scale(0)'
+    })
+})
+document.querySelector("#child2").addEventListener("mouseenter",function(){
+    gsap.to("#cursor",{
+        transform: 'translate(-50%,-50%) scale(1)'
+    })
+})
+document.querySelector("#child2").addEventListener
+("mouseleave",function(){
+    gsap.to("#cursor",{
+        transform: 'translate(-50%,-50%) scale(0)'
+    })
+})
+document.querySelector("#child3").addEventListener("mouseenter",function(){
+    gsap.to("#cursor",{
+        transform: 'translate(-50%,-50%) scale(1)'
+    })
+})
+document.querySelector("#child3").addEventListener
+("mouseleave",function(){
+    gsap.to("#cursor",{
+        transform: 'translate(-50%,-50%) scale(0)'
+    })
+})
+document.querySelector("#child4").addEventListener("mouseenter",function(){
+    gsap.to("#cursor",{
+        transform: 'translate(-50%,-50%) scale(1)'
+    })
+})
+document.querySelector("#child4").addEventListener
+("mouseleave",function(){
+    gsap.to("#cursor",{
+        transform: 'translate(-50%,-50%) scale(0)'
+    })
+})
+// document.querySelector(".child").forEach((function(elem){
+//     elem.addEventListener("mousenter",function(){
+//         gsap.to("#cursor",{
+//          transform: "translate(-50%,-50%) scale(1)",
+            
+//         });
+//     })}));
